@@ -1,0 +1,27 @@
+disabled_rules: # rule identifiers to exclude from running
+  #- file_length
+  #- force_try
+  #- function_parameter_count
+  - identifier_name
+  - line_length
+opt_in_rules: # some rules are only opt-in
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_count
+  - empty_string
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - External
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly. Give warning only for force casting
+
+force_try:
+  severity: warning # explicitly. Give warning only for force try
+
+reporter: "xcode"
