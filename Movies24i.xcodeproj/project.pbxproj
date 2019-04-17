@@ -43,6 +43,18 @@
 		C15456992267501E007661C1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568C2267501E007661C1 /* String.swift */; };
 		C154569A2267501E007661C1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568D2267501E007661C1 /* Environment.swift */; };
 		C154569B2267501E007661C1 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568E2267501E007661C1 /* Localize.swift */; };
+		C17E9498226754CA00E07EF7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E9497226754CA00E07EF7 /* BaseView.swift */; };
+		C17E949A226754E500E07EF7 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E9499226754E500E07EF7 /* Alertable.swift */; };
+		C17E949C226754FF00E07EF7 /* ViewPreparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E949B226754FF00E07EF7 /* ViewPreparable.swift */; };
+		C17E949E2267551200E07EF7 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E949D2267551200E07EF7 /* Bindable.swift */; };
+		C17E94A02267552100E07EF7 /* DataPreparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E949F2267552100E07EF7 /* DataPreparable.swift */; };
+		C17E94A22267553300E07EF7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94A12267553300E07EF7 /* Color.swift */; };
+		C17E94A42267554400E07EF7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94A32267554400E07EF7 /* String.swift */; };
+		C17E94A62267555D00E07EF7 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94A52267555D00E07EF7 /* ViewControllers.swift */; };
+		C17E94AA2267566000E07EF7 /* BaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94A92267566000E07EF7 /* BaseControl.swift */; };
+		C17E94AC2267567700E07EF7 /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94AB2267567700E07EF7 /* BaseTableCell.swift */; };
+		C17E94AE2267568900E07EF7 /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94AD2267568900E07EF7 /* BaseCollectionCell.swift */; };
+		C17E94B02267569B00E07EF7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E94AF2267569B00E07EF7 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +190,18 @@
 		C154568C2267501E007661C1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C154568D2267501E007661C1 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		C154568E2267501E007661C1 /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		C17E9497226754CA00E07EF7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C17E9499226754E500E07EF7 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		C17E949B226754FF00E07EF7 /* ViewPreparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPreparable.swift; sourceTree = "<group>"; };
+		C17E949D2267551200E07EF7 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		C17E949F2267552100E07EF7 /* DataPreparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPreparable.swift; sourceTree = "<group>"; };
+		C17E94A12267553300E07EF7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C17E94A32267554400E07EF7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C17E94A52267555D00E07EF7 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		C17E94A92267566000E07EF7 /* BaseControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControl.swift; sourceTree = "<group>"; };
+		C17E94AB2267567700E07EF7 /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		C17E94AD2267568900E07EF7 /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		C17E94AF2267569B00E07EF7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CD5101D7C15A7740F7205039 /* Pods-Movies24i.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.debug.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.debug.xcconfig"; sourceTree = "<group>"; };
 		D40A47C5CE6DC4FADE2F45EF /* Pods-Movies24i.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.release.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.release.xcconfig"; sourceTree = "<group>"; };
 		E4E5D543C14CC933F7E61136 /* Pods-Movies24iTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24iTests.release.xcconfig"; path = "Target Support Files/Pods-Movies24iTests/Pods-Movies24iTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -329,6 +353,9 @@
 		C154563D22673FFA007661C1 /* MUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C17E94B1226756B000E07EF7 /* BaseClasses */,
+				C17E94A82267559500E07EF7 /* Protocols */,
+				C17E94A72267558C00E07EF7 /* Extensions */,
 				C154563E22673FFA007661C1 /* MUIKit.h */,
 				C154563F22673FFA007661C1 /* Info.plist */,
 			);
@@ -410,6 +437,39 @@
 				C154568C2267501E007661C1 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C17E94A72267558C00E07EF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C17E94A12267553300E07EF7 /* Color.swift */,
+				C17E94A32267554400E07EF7 /* String.swift */,
+				C17E94A52267555D00E07EF7 /* ViewControllers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C17E94A82267559500E07EF7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C17E9499226754E500E07EF7 /* Alertable.swift */,
+				C17E949B226754FF00E07EF7 /* ViewPreparable.swift */,
+				C17E949D2267551200E07EF7 /* Bindable.swift */,
+				C17E949F2267552100E07EF7 /* DataPreparable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C17E94B1226756B000E07EF7 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C17E9497226754CA00E07EF7 /* BaseView.swift */,
+				C17E94A92267566000E07EF7 /* BaseControl.swift */,
+				C17E94AB2267567700E07EF7 /* BaseTableCell.swift */,
+				C17E94AD2267568900E07EF7 /* BaseCollectionCell.swift */,
+				C17E94AF2267569B00E07EF7 /* BaseViewController.swift */,
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 		F0A9ED3C734E0ABC5B43DBBB /* Frameworks */ = {
@@ -633,6 +693,7 @@
 					};
 					C154563B22673FFA007661C1 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					C154564322673FFA007661C1 = {
 						CreatedOnToolsVersion = 10.2;
@@ -965,6 +1026,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17E949A226754E500E07EF7 /* Alertable.swift in Sources */,
+				C17E949C226754FF00E07EF7 /* ViewPreparable.swift in Sources */,
+				C17E94AA2267566000E07EF7 /* BaseControl.swift in Sources */,
+				C17E94A62267555D00E07EF7 /* ViewControllers.swift in Sources */,
+				C17E949E2267551200E07EF7 /* Bindable.swift in Sources */,
+				C17E94B02267569B00E07EF7 /* BaseViewController.swift in Sources */,
+				C17E9498226754CA00E07EF7 /* BaseView.swift in Sources */,
+				C17E94AE2267568900E07EF7 /* BaseCollectionCell.swift in Sources */,
+				C17E94A42267554400E07EF7 /* String.swift in Sources */,
+				C17E94AC2267567700E07EF7 /* BaseTableCell.swift in Sources */,
+				C17E94A02267552100E07EF7 /* DataPreparable.swift in Sources */,
+				C17E94A22267553300E07EF7 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,6 +1239,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD5101D7C15A7740F7205039 /* Pods-Movies24i.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Movies24i/Info.plist;
@@ -1184,6 +1258,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D40A47C5CE6DC4FADE2F45EF /* Pods-Movies24i.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Movies24i/Info.plist;
@@ -1379,6 +1454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BED6C176B6B4A1F5C211EB3B /* Pods-Movies24i-MUIKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1396,6 +1472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasirmturk.MUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1407,6 +1484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99B43519C3978E6A8D8006A3 /* Pods-Movies24i-MUIKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
