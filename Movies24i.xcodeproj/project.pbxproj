@@ -30,6 +30,19 @@
 		C154564E22673FFA007661C1 /* MUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C154563E22673FFA007661C1 /* MUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C154565122673FFA007661C1 /* MUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C154563C22673FFA007661C1 /* MUIKit.framework */; };
 		C154565222673FFA007661C1 /* MUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C154563C22673FFA007661C1 /* MUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C154568F2267501E007661C1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154567E2267501D007661C1 /* BaseViewModel.swift */; };
+		C15456902267501E007661C1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456802267501D007661C1 /* Model.swift */; };
+		C15456912267501E007661C1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456812267501D007661C1 /* ViewModel.swift */; };
+		C15456922267501E007661C1 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456832267501E007661C1 /* NetworkProvider.swift */; };
+		C15456932267501E007661C1 /* StubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456842267501E007661C1 /* StubProvider.swift */; };
+		C15456942267501E007661C1 /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456862267501E007661C1 /* NetworkEndpoint.swift */; };
+		C15456952267501E007661C1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456872267501E007661C1 /* NetworkService.swift */; };
+		C15456962267501E007661C1 /* StubbedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456882267501E007661C1 /* StubbedEndpoint.swift */; };
+		C15456972267501E007661C1 /* ServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15456892267501E007661C1 /* ServerInfo.swift */; };
+		C15456982267501E007661C1 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568B2267501E007661C1 /* Coding.swift */; };
+		C15456992267501E007661C1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568C2267501E007661C1 /* String.swift */; };
+		C154569A2267501E007661C1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568D2267501E007661C1 /* Environment.swift */; };
+		C154569B2267501E007661C1 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154568E2267501E007661C1 /* Localize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +165,19 @@
 		C154564422673FFA007661C1 /* MUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C154564B22673FFA007661C1 /* MUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUIKitTests.swift; sourceTree = "<group>"; };
 		C154564D22673FFA007661C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C154567E2267501D007661C1 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		C15456802267501D007661C1 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C15456812267501D007661C1 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C15456832267501E007661C1 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		C15456842267501E007661C1 /* StubProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubProvider.swift; sourceTree = "<group>"; };
+		C15456862267501E007661C1 /* NetworkEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		C15456872267501E007661C1 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C15456882267501E007661C1 /* StubbedEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedEndpoint.swift; sourceTree = "<group>"; };
+		C15456892267501E007661C1 /* ServerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerInfo.swift; sourceTree = "<group>"; };
+		C154568B2267501E007661C1 /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		C154568C2267501E007661C1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C154568D2267501E007661C1 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C154568E2267501E007661C1 /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		CD5101D7C15A7740F7205039 /* Pods-Movies24i.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.debug.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.debug.xcconfig"; sourceTree = "<group>"; };
 		D40A47C5CE6DC4FADE2F45EF /* Pods-Movies24i.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.release.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.release.xcconfig"; sourceTree = "<group>"; };
 		E4E5D543C14CC933F7E61136 /* Pods-Movies24iTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24iTests.release.xcconfig"; path = "Target Support Files/Pods-Movies24iTests/Pods-Movies24iTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -280,6 +306,11 @@
 		C154561A22673FEC007661C1 /* MCoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				C154568D2267501E007661C1 /* Environment.swift */,
+				C154568E2267501E007661C1 /* Localize.swift */,
+				C154567D2267501D007661C1 /* BaseClasses */,
+				C154568A2267501E007661C1 /* Extensions */,
+				C15456822267501E007661C1 /* Services */,
 				C154561B22673FEC007661C1 /* MCoreKit.h */,
 				C154561C22673FEC007661C1 /* Info.plist */,
 			);
@@ -331,6 +362,54 @@
 				C15455E722673B67007661C1 /* DetailViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		C154567D2267501D007661C1 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C154567E2267501D007661C1 /* BaseViewModel.swift */,
+				C154567F2267501D007661C1 /* Protocols */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		C154567F2267501D007661C1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C15456802267501D007661C1 /* Model.swift */,
+				C15456812267501D007661C1 /* ViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C15456822267501E007661C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C15456832267501E007661C1 /* NetworkProvider.swift */,
+				C15456842267501E007661C1 /* StubProvider.swift */,
+				C15456852267501E007661C1 /* NetworkProtocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C15456852267501E007661C1 /* NetworkProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				C15456862267501E007661C1 /* NetworkEndpoint.swift */,
+				C15456872267501E007661C1 /* NetworkService.swift */,
+				C15456882267501E007661C1 /* StubbedEndpoint.swift */,
+				C15456892267501E007661C1 /* ServerInfo.swift */,
+			);
+			path = NetworkProtocols;
+			sourceTree = "<group>";
+		};
+		C154568A2267501E007661C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C154568B2267501E007661C1 /* Coding.swift */,
+				C154568C2267501E007661C1 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F0A9ED3C734E0ABC5B43DBBB /* Frameworks */ = {
@@ -546,6 +625,7 @@
 					};
 					C154561822673FEC007661C1 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					C154562022673FEC007661C1 = {
 						CreatedOnToolsVersion = 10.2;
@@ -857,6 +937,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154568F2267501E007661C1 /* BaseViewModel.swift in Sources */,
+				C154569A2267501E007661C1 /* Environment.swift in Sources */,
+				C15456992267501E007661C1 /* String.swift in Sources */,
+				C15456922267501E007661C1 /* NetworkProvider.swift in Sources */,
+				C15456962267501E007661C1 /* StubbedEndpoint.swift in Sources */,
+				C154569B2267501E007661C1 /* Localize.swift in Sources */,
+				C15456982267501E007661C1 /* Coding.swift in Sources */,
+				C15456912267501E007661C1 /* ViewModel.swift in Sources */,
+				C15456902267501E007661C1 /* Model.swift in Sources */,
+				C15456972267501E007661C1 /* ServerInfo.swift in Sources */,
+				C15456932267501E007661C1 /* StubProvider.swift in Sources */,
+				C15456942267501E007661C1 /* NetworkEndpoint.swift in Sources */,
+				C15456952267501E007661C1 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,6 +1282,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9EDE563D9F3F41AD17A134B3 /* Pods-Movies24i-MCoreKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1206,6 +1300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasirmturk.MCoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1217,6 +1312,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0771B8D2ADDA2518940158BB /* Pods-Movies24i-MCoreKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
