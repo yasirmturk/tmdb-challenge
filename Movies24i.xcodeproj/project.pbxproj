@@ -65,6 +65,8 @@
 		C195D5D922677AB70098FD7E /* Modularized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195D5D822677AB70098FD7E /* Modularized.swift */; };
 		C195D5DB22677C4C0098FD7E /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195D5DA22677C4C0098FD7E /* UIExtensions.swift */; };
 		C195D5E02267801E0098FD7E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195D5D5226779480098FD7E /* Storyboarded.swift */; };
+		C1E3298F2268B9AE00C1682F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3298D2268B9AE00C1682F /* RootViewController.swift */; };
+		C1E329902268B9AE00C1682F /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3298E2268B9AE00C1682F /* RootCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +224,8 @@
 		C195D5D5226779480098FD7E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		C195D5D822677AB70098FD7E /* Modularized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modularized.swift; sourceTree = "<group>"; };
 		C195D5DA22677C4C0098FD7E /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		C1E3298D2268B9AE00C1682F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C1E3298E2268B9AE00C1682F /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		CD5101D7C15A7740F7205039 /* Pods-Movies24i.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.debug.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.debug.xcconfig"; sourceTree = "<group>"; };
 		D40A47C5CE6DC4FADE2F45EF /* Pods-Movies24i.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.release.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.release.xcconfig"; sourceTree = "<group>"; };
 		E4E5D543C14CC933F7E61136 /* Pods-Movies24iTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24iTests.release.xcconfig"; path = "Target Support Files/Pods-Movies24iTests/Pods-Movies24iTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -408,6 +412,8 @@
 		C154565D226740BD007661C1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1E3298E2268B9AE00C1682F /* RootCoordinator.swift */,
+				C1E3298D2268B9AE00C1682F /* RootViewController.swift */,
 				C15455E522673B67007661C1 /* MasterViewController.swift */,
 				C15455E722673B67007661C1 /* DetailViewController.swift */,
 			);
@@ -1028,6 +1034,7 @@
 			files = (
 				C195D5DB22677C4C0098FD7E /* UIExtensions.swift in Sources */,
 				C15455E822673B67007661C1 /* DetailViewController.swift in Sources */,
+				C1E3298F2268B9AE00C1682F /* RootViewController.swift in Sources */,
 				C195D5CB2267744E0098FD7E /* RxViewController.swift in Sources */,
 				C195D5CF2267747E0098FD7E /* RxNavigationController.swift in Sources */,
 				C195D5E02267801E0098FD7E /* Storyboarded.swift in Sources */,
@@ -1035,6 +1042,7 @@
 				C195D5C42267738E0098FD7E /* Strings.swift in Sources */,
 				C195D5C6226774160098FD7E /* Global.swift in Sources */,
 				C195D5C9226774370098FD7E /* RxViewModel.swift in Sources */,
+				C1E329902268B9AE00C1682F /* RootCoordinator.swift in Sources */,
 				C195D5CD226774670098FD7E /* RxTableCell.swift in Sources */,
 				C15455E422673B67007661C1 /* AppDelegate.swift in Sources */,
 			);

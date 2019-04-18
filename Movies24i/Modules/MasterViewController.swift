@@ -6,11 +6,12 @@
 //  Copyright © 2019 yasirmturk. All rights reserved.
 //
 
-import UIKit
+import MUIKit
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController, Storyboarded {
 
-    var detailViewController: DetailViewController?
+    var coordinator: RootCoordinator?
+
     var objects = [Any]()
 
     override func viewDidLoad() {
@@ -20,11 +21,6 @@ class MasterViewController: UITableViewController {
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
-        if let split = splitViewController {
-            let controllers = split.viewControllers
-            //swiftlint:disable:next force_cast
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,22 +33,6 @@ class MasterViewController: UITableViewController {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
-    }
-
-    // MARK: - Segues
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                //swiftlint:disable:next force_cast
-                let object = objects[indexPath.row] as! NSDate
-                //swiftlint:disable:next force_cast
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }
     }
 
     // MARK: - Table View
@@ -85,6 +65,12 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //swiftlint:disable:next force_cast
+        let object = objects[indexPath.row] as! NSDate
+        coordinator?.showDetail(obj: object)
     }
 
 }

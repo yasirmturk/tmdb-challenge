@@ -6,9 +6,9 @@
 //  Copyright © 2019 yasirmturk. All rights reserved.
 //
 
-import UIKit
+import MUIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
