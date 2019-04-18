@@ -412,10 +412,7 @@
 		C154565D226740BD007661C1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C1E3298E2268B9AE00C1682F /* RootCoordinator.swift */,
-				C1E3298D2268B9AE00C1682F /* RootViewController.swift */,
-				C15455E522673B67007661C1 /* MasterViewController.swift */,
-				C15455E722673B67007661C1 /* DetailViewController.swift */,
+				C1E329912268CF3B00C1682F /* Root */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -530,6 +527,17 @@
 				C195D5D5226779480098FD7E /* Storyboarded.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C1E329912268CF3B00C1682F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C1E3298E2268B9AE00C1682F /* RootCoordinator.swift */,
+				C1E3298D2268B9AE00C1682F /* RootViewController.swift */,
+				C15455E522673B67007661C1 /* MasterViewController.swift */,
+				C15455E722673B67007661C1 /* DetailViewController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		F0A9ED3C734E0ABC5B43DBBB /* Frameworks */ = {

@@ -9,7 +9,7 @@
 import UIKit
 
 /// Using this protocol can provide de-coupling of navigation
-public protocol Coordinator {
+public protocol Coordinator: AnyObject {
 
     // associatedtype RootController: UIViewController
 
