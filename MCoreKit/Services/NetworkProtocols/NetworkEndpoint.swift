@@ -8,6 +8,16 @@
 
 import Foundation
 
+/// Network request parameter encoding types
+public enum NetworkEncoding {
+    /// URL or query string
+    case url
+    /// HTTP form post
+    case form
+    /// JSON Body
+    case json
+}
+
 /// A dictionary of parameters to apply to a HTTP Request
 public typealias Params = [String: Any]
 
@@ -33,6 +43,9 @@ public protocol NetworkEndpoint {
 
     /// The parameters for the request
     var parameters: Params? { get }
+
+    /// Type of encoding to use for params
+    var encoding: NetworkEncoding { get }
 
 }
 
@@ -62,6 +75,9 @@ public extension HTTPGetEndPoint {
     /// Default parameters are most probably nil but can be set
     var parameters: Params? { return nil }
 
+    /// Default encoding for a GET request
+    var encoding: NetworkEncoding { return .url }
+
 }
 
 /// This defines an endpoint of HTTP/Form Post
@@ -72,5 +88,13 @@ public extension HTTPPostEndPoint {
 
     /// Default value for JSON Body is POST
     var httpMethod: String { return .HTTPPost }
+
+    /// Default value for HTTP headers is json
+    var headers: Headers? {
+        return ["Content-type": "application/x-www-form-urlencoded"]
+    }
+
+    /// Default encoding for a POST request
+    var encoding: NetworkEncoding { return .form }
 
 }

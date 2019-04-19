@@ -26,6 +26,15 @@ public extension String {
     }
 }
 
+/// Other extensions
+public extension String {
+
+    /// Utility to encode for query string
+    var queryEscaped: String? {
+        return self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+    }
+}
+
 /// Provides way to check empty without unwrapping
 public extension Optional where Wrapped == String {
 

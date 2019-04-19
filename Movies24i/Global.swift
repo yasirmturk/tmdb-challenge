@@ -34,4 +34,14 @@ public struct MConfig {
     public static let defaultEnvironment = Environment.production
     #endif
 
+    struct Servers {
+        static let api = TMDbAPIServer()
+        static let media = TMDbMediaServer()
+
+        static let dateFormatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            return formatter
+        }()
+    }
 }

@@ -39,10 +39,19 @@ open class NetworkProvider<Target: NetworkEndpoint>: NetworkService {
 
         // Compose the URLRequest
         var request = URLRequest(url: url)
-        request.httpMethod = target.httpMethod
-        if let params = target.parameters, let data = params.encode() {
-            request.httpBody = data
+        // Compose the request params
+        if let params = target.parameters {
+            switch target.encoding {
+            case .url:
+                request.queryString = params.queryString()
+            case .form:
+                request.httpBody = params.queryString().data(using: .utf8)
+            case .json:
+                request.httpBody = params.encode()
+            }
         }
+        //
+        request.httpMethod = target.httpMethod
         // Set request specific headers
         for (k, v) in target.headers ?? [:] {
             request.setValue(v, forHTTPHeaderField: k)

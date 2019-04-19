@@ -1,0 +1,17 @@
+{
+    "page":1,
+    "total_results":19779,
+    "total_pages":989,
+    "results":[
+        {
+            "vote_count":1015,"id":287947,"video":false,"vote_average":7.3,"title":"Shazam!","popularity":304.467,"poster_path":"\/xnopI5Xtky18MPhK40cZAGAOVeV.jpg","original_language":"en","original_title":"Shazam!","genre_ids":[35,12,14],"backdrop_path":"\/bi4jh0Kt0uuZGsGJoUUfqmbrjQg.jpg","adult":false,"overview":"A boy is given the ability to become an adult superhero in times of need with a single magic word.","release_date":"2019-03-23"},
+        {
+            "vote_count":152,"id":456740,"video":false,"vote_average":5.2,"title":"Hellboy","popularity":279.684,"poster_path":"\/nUXCJMnAiwCpNPZuJH2n6h5hGtF.jpg","original_language":"en","original_title":"Hellboy","genre_ids":[28,12,14],"backdrop_path":"\/5BkSkNtfrnTuKOtTaZhl8avn4wU.jpg","adult":false,"overview":"Hellboy comes to England, where he must defeat Nimue, Merlin's consort and the Blood Queen. But their battle will bring about the end of the world, a fate he desperately tries to turn away.","release_date":"2019-04-10"},
+        {
+            "vote_count":305,"id":537915,"video":false,"vote_average":6.6,"title":"After","popularity":267.351,"poster_path":"\/u3B2YKUjWABcxXZ6Nm9h10hLUbh.jpg","original_language":"en","original_title":"After","genre_ids":[18,10749],"backdrop_path":"\/8lESY7UGpOsbL2caib9Qe4bOebF.jpg","adult":false,"overview":"A young woman falls for a guy with a dark secret and the two embark on a rocky relationship.","release_date":"2019-04-11"},
+        {
+            "vote_count":3895,"id":299537,"video":false,"vote_average":7.2,"title":"Captain Marvel","popularity":236.381,"poster_path":"\/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg","original_language":"en","original_title":"Captain Marvel","genre_ids":[28,12,878],"backdrop_path":"\/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg","adult":false,"overview":"The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.","release_date":"2019-03-06"},
+        {
+            "vote_count":1493,"id":166428,"video":false,"vote_average":7.6,"title":"How to Train Your Dragon: The Hidden World","popularity":201.43,"poster_path":"\/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg","original_language":"en","original_title":"How to Train Your Dragon: The Hidden World","genre_ids":[16,10751,12],"backdrop_path":"\/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg","adult":false,"overview":"As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.","release_date":"2019-01-03"}
+    ]
+}

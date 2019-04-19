@@ -6,6 +6,7 @@
 //  Copyright © 2019 yasirmturk. All rights reserved.
 //
 
+import MCoreKit
 import MUIKit
 
 @UIApplicationMain

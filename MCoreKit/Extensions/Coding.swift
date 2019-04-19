@@ -44,6 +44,12 @@ public extension Encodable {
 /// Encode JSON objects to Data
 public extension Dictionary {
 
+    func queryString() -> String {
+        return map { k, v in
+            return "\(k)".queryEscaped.orEmpty + "=" + "\(v)".queryEscaped.orEmpty
+        }.joined(separator: "&")
+    }
+
     /// Quickly encode json dictionary to JSON-ed Data
     func encode() -> Data? {
         return try? JSONSerialization.data(withJSONObject: self, options: [])
