@@ -10,7 +10,7 @@ import MCoreKit
 
 /// Video sites
 enum VideoSite: String {
-    case youtube
+    case youtube = "YouTube"
 }
 
 /// Video sites

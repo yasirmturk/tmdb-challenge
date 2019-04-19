@@ -1,1 +1,49 @@
-{"adult":false,"backdrop_path":"/bi4jh0Kt0uuZGsGJoUUfqmbrjQg.jpg","belongs_to_collection":null,"budget":80000000,"genres":[{"id":35,"name":"Comedy"},{"id":12,"name":"Adventure"},{"id":14,"name":"Fantasy"}],"homepage":"http://www.shazammovie.com","id":287947,"imdb_id":"tt0448115","original_language":"en","original_title":"Shazam!","overview":"A boy is given the ability to become an adult superhero in times of need with a single magic word.","popularity":304.467,"poster_path":"/xnopI5Xtky18MPhK40cZAGAOVeV.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC Entertainment","origin_country":"US"},{"id":60378,"logo_path":null,"name":"Callahan Filmworks","origin_country":"US"},{"id":429,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC Comics","origin_country":"US"},{"id":12,"logo_path":"/iaYpEp3LQmb8AfAtmTvpqd4149c.png","name":"New Line Cinema","origin_country":"US"},{"id":174,"logo_path":"/ky0xOc5OrhzkZ1N6KyUxacfQsCk.png","name":"Warner Bros. Pictures","origin_country":"US"},{"id":11565,"logo_path":null,"name":"The Safran Company","origin_country":"US"},{"id":105514,"logo_path":null,"name":"Mad Ghost Productions","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United States of America"}],"release_date":"2019-03-23","revenue":162181572,"runtime":132,"spoken_languages":[{"iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Just Say The Magic Word","title":"Shazam!","video":false,"vote_average":7.3,"vote_count":1021}
+{
+    "adult":false,
+    "backdrop_path":"/bi4jh0Kt0uuZGsGJoUUfqmbrjQg.jpg",
+    "belongs_to_collection":null,
+    "budget":80000000,
+    "genres":[
+        {
+            "id":35,"name":"Comedy"},
+        {
+            "id":12,"name":"Adventure"},
+        {
+            "id":14,"name":"Fantasy"}
+    ],
+    "homepage":"http://www.shazammovie.com",
+    "id":287947,
+    "imdb_id":"tt0448115",
+    "original_language":"en",
+    "original_title":"Shazam!",
+    "overview":"A boy is given the ability to become an adult superhero in times of need with a single magic word.",
+    "popularity":304.467,
+    "poster_path":"/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+    "production_companies":[
+        {
+            "id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC Entertainment","origin_country":"US"},
+        {
+            "id":60378,"logo_path":null,"name":"Callahan Filmworks","origin_country":"US"},
+        {
+            "id":429,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC Comics","origin_country":"US"},
+        {
+            "id":12,"logo_path":"/iaYpEp3LQmb8AfAtmTvpqd4149c.png","name":"New Line Cinema","origin_country":"US"},
+        {
+            "id":174,"logo_path":"/ky0xOc5OrhzkZ1N6KyUxacfQsCk.png","name":"Warner Bros. Pictures","origin_country":"US"},
+        {
+            "id":11565,"logo_path":null,"name":"The Safran Company","origin_country":"US"},
+        {
+            "id":105514,"logo_path":null,"name":"Mad Ghost Productions","origin_country":"US"}
+    ],
+    "production_countries":[{"iso_3166_1":"US","name":"United States of America"}],
+    "release_date":"2019-03-23",
+    "revenue":162181572,
+    "runtime":132,
+    "spoken_languages":[{"iso_639_1":"en","name":"English"}],
+    "status":"Released",
+    "tagline":"Just Say The Magic Word",
+    "title":"Shazam!",
+    "video":false,
+    "vote_average":7.3,
+    "vote_count":1021
+}
