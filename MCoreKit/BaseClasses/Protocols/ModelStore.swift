@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  ModelStore.swift
 //  MCoreKit
 //
 //  Created by Yasir M Turk on 17/04/2019.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-/// Protocol for a ViewModel that should have a network service
-public protocol ViewModel {
+/// Protocol for a ModelStore that should have a network service
+public protocol ModelStore {
     associatedtype SVC: NetworkService
     var network: SVC { get }
 }

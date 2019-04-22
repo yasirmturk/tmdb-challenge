@@ -12,17 +12,37 @@ import MUIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var coordinator: RootCoordinator?
+    let network = NetworkProvider<TMDbMovieAPI>()
+    let alamofire = AlamofireProvider<TMDbMovieAPI>()
+    var coordinator: AppCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let splitController = RootViewController.instantiate(MApp.Modules.root)
-        coordinator = RootCoordinator(splitController)
-        coordinator?.start()
+        //        let service = TMDbMovieService(network: network)
+        //        let service = TMDbMovieService(network: alamofire)
+        //        service.fetchPopular(onSuccess: { movies in
+        //            print(movies.results.count)
+        //            print(movies.results.first)
+        //        }, onError: { error in
+        //            print(error.localizedDescription)
+        //        })
+        //
+        //        service.fetchDetails(287947, onSuccess: { movie in
+        //            print(movie!)
+        //        }, onError: { error in
+        //            print(error.localizedDescription)
+        //        })
+        //
+        //        service.fetchVideos(287947, onSuccess: { videos in
+        //            print(videos.results.count)
+        //            print(videos.results.first)
+        //        }, onError: { error in
+        //            print(error.localizedDescription)
+        //        })
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = splitController
+        coordinator = AppCoordinator(window!, start: true)
         window?.makeKeyAndVisible()
         return true
     }

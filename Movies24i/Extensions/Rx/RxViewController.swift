@@ -22,3 +22,16 @@ class RxViewController: BaseViewController, NVActivityIndicatorViewable {
     ///
     //    var viewModel: T!
 }
+
+/// Reactive Rx base class for UITableViewController
+class RxTableController: BaseTableViewController, NVActivityIndicatorViewable {
+    ///
+    let bag = DisposeBag()
+
+    override func prepareData() {
+        super.prepareData()
+
+        tableView.dataSource = nil
+        tableView.delegate = nil
+    }
+}

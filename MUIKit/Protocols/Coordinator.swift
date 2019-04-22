@@ -16,10 +16,22 @@ public protocol Coordinator: AnyObject {
     /// List all the sub-coordinators
     var children: [Coordinator] { get set }
     /// Provide a root to perform navigations
-    var root: UIViewController { get set }
+    var root: UIViewController! { get set }
 
     /// Boot up the current coordinator
     func start()
+
+    /// Clean up the child
+    func childDidFinish(_ child: Coordinator)
+}
+
+public extension Coordinator {
+
+    func childDidFinish(_ child: Coordinator) {
+        if let idx = children.firstIndex(where: { $0 === child }) {
+            children.remove(at: idx)
+        }
+    }
 }
 
 /////

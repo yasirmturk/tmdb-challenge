@@ -14,6 +14,11 @@ struct TMDbMovieService<S: NetworkService> where S.Target == TMDbMovieAPI {
     /// Network injection could be Alamofire or Stub network
     let network: S
 
+    ///
+    init(_ network: S) {
+        self.network = network
+    }
+
     /// Information about popular movies should be retrieved from /movie/popular endpoint.
     func fetchPopular(onSuccess: @escaping ((MovieResult) -> Void), onError: @escaping ((Error) -> Void)) {
         _ = network.fetch(.popular) { data, error in

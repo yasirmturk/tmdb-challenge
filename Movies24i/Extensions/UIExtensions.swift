@@ -7,15 +7,3 @@
 //
 
 import MUIKit
-
-/// Mapping modules to respective storyboards
-extension MApp.Modules: Modularized {
-
-    var storyboad: String {
-        switch self {
-        case .root:
-            return MApp.Storyboard.main.rawValue
-        }
-    }
-
-}

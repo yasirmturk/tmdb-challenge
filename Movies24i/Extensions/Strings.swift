@@ -16,6 +16,10 @@ extension String {
     //
     static let Movies24i = "Movies 24i".localized
 
+    //
+    static let MovieCatalogue = "Movie Catalogue".localized
+    static let PullToLoad = "Pull to Load".localized
+
     // Error messages
     static let UnableToInitialize = "Unable to initialize the module %@".localized
     static let ErrorAPI = "The api is not working".localized

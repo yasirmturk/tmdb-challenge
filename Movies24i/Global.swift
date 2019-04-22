@@ -10,16 +10,6 @@ import MCoreKit
 
 /// Providing global and static objects relevant to this App
 struct MApp {
-
-    /// List all the modules in the app
-    enum Modules {
-        case root
-    }
-
-    /// List all the storyboards in the app
-    enum Storyboard: String {
-        case main = "Main"
-    }
 }
 
 /// Global Configuration
