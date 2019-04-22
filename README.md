@@ -50,16 +50,8 @@ Written test case for Decoding, Stub API, Live API and Models only
 
 ### iPhone
 
-![iPhone Catalogue](/docs/screens/iPhone-catalogue.png)
-![iPhone Catalogue Filter](/docs/screens/iPhone-catalogue-filter.png)
-![iPhone Catalogue Landscape](/docs/screens/iPhone-catalogue-landscape.png)
-![iPhone Detail](/docs/screens/iPhone-detail.png)
-![iPhone Details Landscape](/docs/screens/iPhone-detail-landscape.png)
-![iPhone Trailer](/docs/screens/iPhone-trailer.png)
+<img alt="iPhone Catalogue" src="docs/screens/iPhone-catalogue.png?raw=true" width=290 /> <img alt="iPhone Catalogue Filter" src="docs/screens/iPhone-catalogue-filter.png?raw=true" width=290 /> <img alt="iPhone Detail" src="docs/screens/iPhone-detail.png?raw=true" width=290 /> <img alt="iPhone Catalogue Landscape" src="docs/screens/iPhone-catalogue-landscape.png?raw=true" width=420 /> <img alt="iPhone Details Landscape" src="docs/screens/iPhone-detail-landscape.png?raw=true" width=420 /> <img alt="iPhone Trailer" src="docs/screens/iPhone-trailer.png?raw=true" width=420 />
 
 ### iPad
 
-![iPad](/docs/screens/iPad.png)
-![iPad Catalogue Overlay](/docs/screens/iPad-catalogue-overlay.png)
-![iPad Filter](/docs/screens/iPad-filter.png)
-![iPad Detail](/docs/screens/iPad-detail.png)
+<img alt="iPad" src="docs/screens/iPad.png?raw=true" width=400 /> <img alt="iPad Filter" src="docs/screens/iPad-filter.png?raw=true" width=400 /> <img alt="iPad Catalogue Overlay" src="docs/screens/iPad-catalogue-overlay.png?raw=true" width=400 /> <img alt="iPad Detail" src="docs/screens/iPad-detail.png?raw=true" width=400 />
