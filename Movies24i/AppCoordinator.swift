@@ -7,6 +7,8 @@
 //
 
 import MUIKit
+import Reachability
+import MaterialComponents
 
 class AppCoordinator: Coordinator {
 
@@ -22,6 +24,9 @@ class AppCoordinator: Coordinator {
 
     weak var window: UIWindow!
 
+    let reachability = Reachability()
+    static var connected = true
+
     init(_ window: UIWindow, start: Bool = false) {
         self.window = window
         if start { self.start() }
@@ -33,20 +38,43 @@ class AppCoordinator: Coordinator {
         } else {
             showMovies()
         }
+
+        prepareReachability()
     }
 
+    /// Start catalogue
     func showMovies() {
-        let nav = UINavigationController()
+        let nav = BaseNavigationController()
         let c = MovieCatalogueCoordinator(nav)
         c.start()
         children.append(c)
         root = nav
     }
 
+    /// Start catalogue and details side by side
     func showMoviesAndDetail() {
         let split = MainSplitViewController()
-        split.viewControllers = [UINavigationController(), UINavigationController()]
+        split.viewControllers = [BaseNavigationController(), BaseNavigationController()]
         root = split
+    }
+
+    /// Monitor the network connection
+    func prepareReachability() {
+        reachability?.whenReachable = { r in
+            AppCoordinator.connected = r.connection != .none
+            MDCSnackbarManager.show(MDCSnackbarMessage(text: .Connected))
+        }
+
+        reachability?.whenUnreachable = { r in
+            AppCoordinator.connected = false
+            MDCSnackbarManager.show(MDCSnackbarMessage(text: .ErrorNetwork))
+        }
+
+        do {
+            try reachability?.startNotifier()
+        } catch {
+            MDCSnackbarManager.show(MDCSnackbarMessage(text: .ErrorReachability))
+        }
     }
 
 }

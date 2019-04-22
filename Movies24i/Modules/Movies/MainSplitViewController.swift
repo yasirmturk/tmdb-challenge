@@ -6,7 +6,7 @@
 //  Copyright © 2019 yasirmturk. All rights reserved.
 //
 
-import UIKit
+import MUIKit
 
 /// Split ViewController used on iPad only but could be used on any device
 class MainSplitViewController: UISplitViewController, Storyboarded {
@@ -27,6 +27,8 @@ class MainSplitViewController: UISplitViewController, Storyboarded {
     }
 
 }
+
+extension MainSplitViewController: Alertable {}
 
 // MARK: - Split view
 

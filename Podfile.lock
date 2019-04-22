@@ -2,9 +2,57 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
+  - MaterialComponents/AnimationTiming (82.0.0)
+  - MaterialComponents/Buttons (82.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (82.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (82.0.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Application (82.0.0)
+  - MaterialComponents/private/KeyboardWatcher (82.0.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (82.0.0)
+  - MaterialComponents/private/Overlay (82.0.0)
+  - MaterialComponents/Ripple (82.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (82.0.0)
+  - MaterialComponents/ShadowLayer (82.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (82.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar (82.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (82.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - NVActivityIndicatorView (4.7.0):
     - NVActivityIndicatorView/Presenter (= 4.7.0)
   - NVActivityIndicatorView/Presenter (4.7.0)
+  - ReachabilitySwift (4.3.1)
+  - Realm (3.14.1):
+    - Realm/Headers (= 3.14.1)
+  - Realm/Headers (3.14.1)
+  - RealmSwift (3.14.1):
+    - Realm (= 3.14.1)
   - RxBlocking (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxCocoa (4.5.0):
@@ -17,7 +65,10 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - AlamofireImage (~> 3.5.2)
+  - MaterialComponents/Snackbar (~> 82.0.0)
   - NVActivityIndicatorView (~> 4.7.0)
+  - ReachabilitySwift (~> 4.3.1)
+  - RealmSwift (~> 3.14.1)
   - RxBlocking (~> 4.5.0)
   - RxCocoa (~> 4.5.0)
   - RxSwift (~> 4.5.0)
@@ -28,7 +79,13 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
     - NVActivityIndicatorView
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
     - RxBlocking
     - RxCocoa
     - RxSwift
@@ -38,13 +95,19 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  MaterialComponents: 716ab39b84350c755dfd4f8bc9ca168f377af504
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
+  RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
   RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
 
-PODFILE CHECKSUM: 1af1c2ec85a7f5f893119cf4c132167f12a6413d
+PODFILE CHECKSUM: b2d47a692966f82c1ef7bff7ed5db5e9876aa09f
 
 COCOAPODS: 1.6.1

@@ -12,7 +12,7 @@
 		<key>MCoreKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>20</integer>
 		</dict>
 		<key>MUIKit.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>MUIKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>21</integer>
 		</dict>
 		<key>Movies24i.xcscheme</key>
 		<dict>
@@ -32,7 +32,7 @@
 		<key>Movies24i.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 </dict>

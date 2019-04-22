@@ -50,12 +50,3 @@ extension Video: Model {
         type = VideoType(rawValue: try container.decode(String.self, forKey: .type))
     }
 }
-
-/// To parse the API result from video list
-struct VideoResult {
-    let id: Int
-    let results: [Video]
-}
-
-/// Implementation of Decodable
-extension VideoResult: Model { }

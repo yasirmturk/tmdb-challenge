@@ -23,15 +23,17 @@ target 'Movies24i' do
   # Network & Location
   pod 'Alamofire', '~> 4.8.2'
   pod 'AlamofireImage', '~> 3.5.2'
+  pod 'ReachabilitySwift', '~> 4.3.1'
 
   # Logging & crash reporting
 
   # UI/UX
   pod 'NVActivityIndicatorView', '~> 4.7.0'
   pod 'XCDYouTubeKit', '~> 2.7.3'
+  pod 'MaterialComponents/Snackbar', '~> 82.0.0'
 
   # Data model
-  #pod 'RealmSwift', '~> 3.14.1'
+  pod 'RealmSwift', '~> 3.14.1'
 
   # 3rd Party
 

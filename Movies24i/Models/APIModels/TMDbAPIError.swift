@@ -23,6 +23,7 @@ struct TMDbAPIError: MError {
 
     static let noData = TMDbAPIError(code: -1, message: .ErrorData)
     static let invalidResponse = TMDbAPIError(code: -1, message: .ErrorResponse)
+    static let emptyData = TMDbAPIError(code: 199, message: .ErrorNotEnoughData)
 }
 
 // Implementing decodable mapping
