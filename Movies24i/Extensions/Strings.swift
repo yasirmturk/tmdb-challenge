@@ -19,6 +19,11 @@ extension String {
     //
     static let MovieCatalogue = "Movie Catalogue".localized
     static let PullToLoad = "Pull to Load".localized
+    static let MovieDetail = "Movie Detail".localized
+    static let WatchTrailer = "Watch Trailer".localized
+    static let Genres = "Genres".localized
+    static let Date = "Date".localized
+    static let Overview = "Overview".localized
 
     // Error messages
     static let UnableToInitialize = "Unable to initialize the module %@".localized

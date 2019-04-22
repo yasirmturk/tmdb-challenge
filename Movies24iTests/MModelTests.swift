@@ -27,6 +27,21 @@ class MModelTests: XCTestCase {
         XCTAssertNotNil(date)
     }
 
+    /// Testing decoding of Genres
+    func testGenreDecoding() {
+        let stubData = TMDbMovieAPI.movieDetails(287947).data
+        XCTAssertNotNil(stubData)
+
+        let movie = try? stubData!.decode(type: Movie.self)
+        XCTAssertNotNil(movie)
+
+        XCTAssertEqual(movie!.id, 287947)
+        XCTAssertEqual(movie!.genres.count, 3)
+        XCTAssertEqual(movie!.genres[0].name, "Comedy")
+        XCTAssertEqual(movie!.genres[1].name, "Adventure")
+        XCTAssertEqual(movie!.genres[2].name, "Fantasy")
+    }
+
     /// Testing decoding of stub data
     func testStubDecodingPopular() {
         let stubData = TMDbMovieAPI.popular.data

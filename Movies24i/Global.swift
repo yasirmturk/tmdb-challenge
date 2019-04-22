@@ -10,6 +10,41 @@ import MCoreKit
 
 /// Providing global and static objects relevant to this App
 struct MApp {
+
+    /// Colors palete
+    enum Color: UInt32 {
+        case text = 0x000000FF
+        case white = 0xFFFFFFFF
+        case clear = 0x00000000
+
+        var color: UIColor {
+            return UIColor(rgba: self.rawValue)
+        }
+
+        func dimColor(_ alpha: CGFloat = 0.5) -> UIColor {
+            return color.withAlphaComponent(alpha)
+        }
+    }
+
+    /// Fonts
+    enum FontSize: CGFloat {
+        case large = 25.0
+        case heading = 15.0
+        case regular = 14.0
+
+        func font(_ bold: Bool = false) -> UIFont {
+            return bold ? UIFont.boldSystemFont(ofSize: self.rawValue)
+                : UIFont.systemFont(ofSize: self.rawValue)
+        }
+
+    }
+
+    static let displayDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        return formatter
+    }()
+
 }
 
 /// Global Configuration

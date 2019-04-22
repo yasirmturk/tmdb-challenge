@@ -12,7 +12,7 @@ import RxCocoa
 
 class MovieCatalogueViewController: RxTableController, Storyboarded {
 
-    var coordinator: MovieCatalogueCoordinator?
+    // MARK: - Properties
     var viewModel: MovieCatalogueViewModel!
 
     var objects = [Any]()
@@ -45,12 +45,13 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
         // Generate event for reload
         refreshControl?.rx.controlEvent(.valueChanged)
             .subscribe(onNext: { [unowned self] in
-                self.viewModel.events.onNext(.reload)
+                self.viewModel.fetch()
+                //                self.viewModel.events.onNext(.reload)
             }).disposed(by: bag)
 
         tableView.rx.modelSelected(Movie.self).subscribe(onNext: { [unowned self] model in
-            self.viewModel.events.onNext(.selectMovie(model))
-//            self.coordinator?.showDetail(obj: movie)
+            self.viewModel.selectMovie(model)
+            //            self.viewModel.events.onNext(.selectMovie(model))
         }).disposed(by: bag)
     }
 
@@ -67,8 +68,12 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
         }).disposed(by: bag)
         // Bind to the tableview
         viewModel.movies.catchErrorJustReturn([])
-            .bind(to: tableView.rx.items(cellIdentifier: MovieCell.reuseIdentifier, cellType: MovieCell.self)) { [weak self] _, movie, cell in
+            .bind(to: tableView.rx.items(cellIdentifier: MovieCell.reuseIdentifier, cellType: MovieCell.self)) { [weak self] idx, movie, cell in
                 cell.movie = movie
+//                if self?.tableView.indexPathForSelectedRow == nil {
+//                    self?.tableView.selectRow(at: IndexPath(row: idx, section: 0), animated: true, scrollPosition: .none)
+//                    self?.viewModel.selectMovie(movie)
+//                }
             }.disposed(by: bag)
         // Display error
         viewModel.errors.subscribe(onNext: { [weak self] error in

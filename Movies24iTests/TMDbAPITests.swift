@@ -27,7 +27,7 @@ class TMDbAPITests: XCTestCase {
     func testStubCall() {
         let expectation = XCTestExpectation(description: "Get popular movies from json")
 
-        let service = TMDbMovieService(network: stub)
+        let service = TMDbMovieService(stub)
         service.fetchPopular(onSuccess: { result in
 
             let movies = result.results
@@ -49,8 +49,8 @@ class TMDbAPITests: XCTestCase {
         let expectation2 = XCTestExpectation(description: "Movie details from json")
         service.fetchDetails(287947, onSuccess: { movie in
             XCTAssertNotNil(movie)
-            XCTAssertEqual(movie!.title, "Shazam!")
-            XCTAssertEqual(movie!.genres.count, 3)
+            XCTAssertEqual(movie.title, "Shazam!")
+            XCTAssertEqual(movie.genres.count, 3)
 
             expectation2.fulfill()
         }, onError: { error in
@@ -66,7 +66,7 @@ class TMDbAPITests: XCTestCase {
     func testLiveCallPopular() {
         let expectation = XCTestExpectation(description: "Get popular movies")
 
-        let service = TMDbMovieService(network: alamofire)
+        let service = TMDbMovieService(alamofire)
         // API Success test
         service.fetchPopular(onSuccess: { result in
             XCTAssertGreaterThanOrEqual(result.results.count, 0)

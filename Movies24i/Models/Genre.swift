@@ -13,7 +13,7 @@ struct Genre {
 
     // Primitive attributes
     let id: Int
-    let name: String? = nil
+    let name: String?
 }
 
 /// Implementation of Decodable

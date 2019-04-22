@@ -53,7 +53,7 @@ extension Movie: Model {
         title = try container.decode(String.self, forKey: .title)
         poster = try container.decode(String.self, forKey: .poster)
         if let genreIDs = try? container.decode([Int].self, forKey: .genreIDs) {
-            genres = genreIDs.map { Genre(id: $0) }
+            genres = genreIDs.map { Genre(id: $0, name: nil) }
         } else {
             genres = try container.decode([Genre].self, forKey: .genres)
         }

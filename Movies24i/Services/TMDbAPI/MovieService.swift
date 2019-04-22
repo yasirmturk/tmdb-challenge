@@ -33,7 +33,7 @@ struct TMDbMovieService<S: NetworkService> where S.Target == TMDbMovieAPI {
     }
 
     /// Retrieving movie details should be done using /movie/<id> endpoint.
-    func fetchDetails(_ id: Int, onSuccess: @escaping ((Movie?) -> Void), onError: @escaping ((Error) -> Void)) {
+    func fetchDetails(_ id: Int, onSuccess: @escaping ((Movie) -> Void), onError: @escaping ((Error) -> Void)) {
         _ = network.fetch(.movieDetails(id)) { data, error in
             let result = TMDbAPIResult<Movie>(data, error)
             switch result {
