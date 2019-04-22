@@ -9,16 +9,21 @@
 import MCoreKit
 import RxSwift
 
+/// Events generated from the Movie details ViewModel
 protocol MovieDetailViewModelDelegate: AnyObject {
-    func showTrailer(for movie: Movie)
+    func showTrailer(for video: Video)
 }
 
+/// ViewModel class for movie details
 class MovieDetailViewModel: RxViewModel {
 
     // MARK: - Properties
+
+    /// Model for the movie
     let model: MovieModel
 
     let movie = BehaviorSubject<Movie?>(value: nil)
+    let videos = PublishSubject<[Video]>()
     let errors = PublishSubject<Error>()
 
     weak var delegate: MovieDetailViewModelDelegate?
@@ -28,6 +33,7 @@ class MovieDetailViewModel: RxViewModel {
     }
 
     // MARK: - Methods
+
     init(model: MovieModel) {
         self.model = model
         super.init()
@@ -44,9 +50,17 @@ class MovieDetailViewModel: RxViewModel {
         })
     }
 
-    func watchTrailer() {
+    func fetchVideos() {
         guard let m = selectedMovie else { return }
 
-        self.delegate?.showTrailer(for: m)
+        model.fetchVideos(m, onSuccess: { [weak self] videos in
+            self?.videos.onNext(videos)
+        }, onError: { [weak self] err in
+            self?.errors.onNext(err)
+        })
+    }
+
+    func watchTrailer(_ video: Video) {
+        self.delegate?.showTrailer(for: video)
     }
 }

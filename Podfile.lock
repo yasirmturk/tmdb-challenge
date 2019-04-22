@@ -12,6 +12,7 @@ PODS:
   - RxSwift (4.5.0)
   - RxTest (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
+  - XCDYouTubeKit (2.7.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.5.0)
   - RxSwift (~> 4.5.0)
   - RxTest (~> 4.5.0)
+  - XCDYouTubeKit (~> 2.7.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -31,6 +33,7 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - RxTest
+    - XCDYouTubeKit
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
+  XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
 
-PODFILE CHECKSUM: 409a1147c37cde48f7fd0fe8b4906f0c1d391c22
+PODFILE CHECKSUM: 1af1c2ec85a7f5f893119cf4c132167f12a6413d
 
 COCOAPODS: 1.6.1

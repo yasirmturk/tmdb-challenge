@@ -92,6 +92,9 @@
 		C1E3299F2268DCC700C1682F /* TMDbAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3299E2268DCC700C1682F /* TMDbAPIResult.swift */; };
 		C1E329A12268DCFE00C1682F /* TMDbAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E329A02268DCFE00C1682F /* TMDbAPIError.swift */; };
 		C1E329A32268DE9300C1682F /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E329A22268DE9300C1682F /* Coding.swift */; };
+		C1F22078226DC91B0045AF8A /* WatchTrailerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F22077226DC91B0045AF8A /* WatchTrailerCoordinator.swift */; };
+		C1F2207A226DD8270045AF8A /* XCDYouTubeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F22079226DD8270045AF8A /* XCDYouTubeKit.swift */; };
+		C1F2207C226DED450045AF8A /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2207B226DED450045AF8A /* MovieCellViewModel.swift */; };
 		C1F9C5A62269AEC400E80591 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9C5A42269AEAF00E80591 /* URLRequest.swift */; };
 /* End PBXBuildFile section */
 
@@ -277,6 +280,9 @@
 		C1E3299E2268DCC700C1682F /* TMDbAPIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbAPIResult.swift; sourceTree = "<group>"; };
 		C1E329A02268DCFE00C1682F /* TMDbAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbAPIError.swift; sourceTree = "<group>"; };
 		C1E329A22268DE9300C1682F /* Coding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		C1F22077226DC91B0045AF8A /* WatchTrailerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTrailerCoordinator.swift; sourceTree = "<group>"; };
+		C1F22079226DD8270045AF8A /* XCDYouTubeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDYouTubeKit.swift; sourceTree = "<group>"; };
+		C1F2207B226DED450045AF8A /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		C1F9C5A42269AEAF00E80591 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = ../../Movies24i/Extensions/URLRequest.swift; sourceTree = "<group>"; };
 		CD5101D7C15A7740F7205039 /* Pods-Movies24i.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.debug.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.debug.xcconfig"; sourceTree = "<group>"; };
 		D40A47C5CE6DC4FADE2F45EF /* Pods-Movies24i.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies24i.release.xcconfig"; path = "Target Support Files/Pods-Movies24i/Pods-Movies24i.release.xcconfig"; sourceTree = "<group>"; };
@@ -595,6 +601,7 @@
 				C195D5DA22677C4C0098FD7E /* UIExtensions.swift */,
 				C195D5C32267738E0098FD7E /* Strings.swift */,
 				C1E329A22268DE9300C1682F /* Coding.swift */,
+				C1F22079226DD8270045AF8A /* XCDYouTubeKit.swift */,
 				C195D5D0226774E70098FD7E /* Rx */,
 			);
 			path = Extensions;
@@ -628,10 +635,12 @@
 				C18947B9226B078400F6A7FD /* MovieCatalogueCoordinator.swift */,
 				C10D9718226CE06400F0C5DA /* MovieCatalogueViewModel.swift */,
 				C15455E522673B67007661C1 /* MovieCatalogueViewController.swift */,
+				C1F2207B226DED450045AF8A /* MovieCellViewModel.swift */,
 				C10D9720226CEAE200F0C5DA /* MovieCell.swift */,
 				C18947BB226B079600F6A7FD /* MovieDetailCoordinator.swift */,
 				C10D971A226CE07800F0C5DA /* MovieDetailViewModel.swift */,
 				C15455E722673B67007661C1 /* MovieDetailViewController.swift */,
+				C1F22077226DC91B0045AF8A /* WatchTrailerCoordinator.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -984,6 +993,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -994,6 +1004,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1165,6 +1176,7 @@
 				C10D9719226CE06400F0C5DA /* MovieCatalogueViewModel.swift in Sources */,
 				C10D971D226CE22300F0C5DA /* MovieModel.swift in Sources */,
 				C163B3592269D5CB00106D12 /* MovieResult.swift in Sources */,
+				C1F2207A226DD8270045AF8A /* XCDYouTubeKit.swift in Sources */,
 				C15455E822673B67007661C1 /* MovieDetailViewController.swift in Sources */,
 				C1E3299C2268D7CA00C1682F /* Movie.swift in Sources */,
 				C1E3298F2268B9AE00C1682F /* MainSplitViewController.swift in Sources */,
@@ -1182,6 +1194,7 @@
 				C195D5C42267738E0098FD7E /* Strings.swift in Sources */,
 				C1E329952268D4D000C1682F /* Servers.swift in Sources */,
 				C163B35F2269F9A200106D12 /* Genre.swift in Sources */,
+				C1F22078226DC91B0045AF8A /* WatchTrailerCoordinator.swift in Sources */,
 				C1E3299F2268DCC700C1682F /* TMDbAPIResult.swift in Sources */,
 				C195D5C6226774160098FD7E /* Global.swift in Sources */,
 				C1E329932268D42A00C1682F /* MovieEndpoints.swift in Sources */,
@@ -1192,6 +1205,7 @@
 				C10D971B226CE07800F0C5DA /* MovieDetailViewModel.swift in Sources */,
 				C10D9717226CDF9300F0C5DA /* AppModules.swift in Sources */,
 				C1E329982268D6BF00C1682F /* MovieService.swift in Sources */,
+				C1F2207C226DED450045AF8A /* MovieCellViewModel.swift in Sources */,
 				C15455E422673B67007661C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

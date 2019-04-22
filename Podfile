@@ -28,6 +28,7 @@ target 'Movies24i' do
 
   # UI/UX
   pod 'NVActivityIndicatorView', '~> 4.7.0'
+  pod 'XCDYouTubeKit', '~> 2.7.3'
 
   # Data model
   #pod 'RealmSwift', '~> 3.14.1'

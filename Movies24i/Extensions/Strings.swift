@@ -27,6 +27,7 @@ extension String {
 
     // Error messages
     static let UnableToInitialize = "Unable to initialize the module %@".localized
+    static let ErrorNotEnoughData = "The api did not provide any data".localized
     static let ErrorAPI = "The api is not working".localized
     static let ErrorClient = "The request is not valid".localized
     static let ErrorData = "The api sent invalid data".localized

@@ -7,6 +7,8 @@
 //
 
 import MUIKit
+import RxSwift
+import RxCocoa
 import AlamofireImage
 
 class MovieCell: RxTableCell {
@@ -19,11 +21,11 @@ class MovieCell: RxTableCell {
     static var reuseIdentifier = "MovieCell"
 
     // MARK: - Properties
-    var movie: Movie? {
+    var viewModel: MovieCellViewModel! {
         didSet {
-            guard let movie = movie else { return }
-
-            reloadData(movie)
+            viewModel.movie.subscribe(onNext: { [weak self] movie in
+                self?.reloadData(movie)
+            }).disposed(by: bag)
         }
     }
 
@@ -47,4 +49,5 @@ class MovieCell: RxTableCell {
             posterView.af_setImage(withURL: poster, placeholderImage: UIImage(named: "mozima"))
         }
     }
+
 }

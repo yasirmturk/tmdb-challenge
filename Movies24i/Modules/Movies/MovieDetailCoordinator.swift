@@ -45,11 +45,18 @@ class MovieDetailCoordinator: Coordinator {
         guard let vm = viewModel else { return }
         vm.pushNext(movie: movie)
     }
+
+    func playVideo(_ video: Video) {
+        let c = WatchTrailerCoordinator(root, for: video)
+        c.parent = self
+        c.start()
+        children.append(c)
+    }
 }
 
 extension MovieDetailCoordinator: MovieDetailViewModelDelegate {
 
-    func showTrailer(for movie: Movie) {
-        
+    func showTrailer(for video: Video) {
+        playVideo(video)
     }
 }

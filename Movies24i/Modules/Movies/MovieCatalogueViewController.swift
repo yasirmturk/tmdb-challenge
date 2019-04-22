@@ -10,12 +10,13 @@ import MUIKit
 import RxSwift
 import RxCocoa
 
+/// ViewController for the list of popular movies
 class MovieCatalogueViewController: RxTableController, Storyboarded {
 
     // MARK: - Properties
-    var viewModel: MovieCatalogueViewModel!
 
-    var objects = [Any]()
+    /// ViewModel for the list of popular movies
+    var viewModel: MovieCatalogueViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,39 +47,43 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
         refreshControl?.rx.controlEvent(.valueChanged)
             .subscribe(onNext: { [unowned self] in
                 self.viewModel.fetch()
-                //                self.viewModel.events.onNext(.reload)
             }).disposed(by: bag)
 
+        // Bind row selection
         tableView.rx.modelSelected(Movie.self).subscribe(onNext: { [unowned self] model in
             self.viewModel.selectMovie(model)
-            //            self.viewModel.events.onNext(.selectMovie(model))
         }).disposed(by: bag)
     }
 
     override func prepareData() {
         super.prepareData()
 
-        startAnimating()
-        viewModel.fetch()
-
         // Hide spinner on response
         viewModel.movies.subscribe(onNext: { [weak self] _ in
             self?.refreshControl?.endRefreshing()
             self?.stopAnimating()
         }).disposed(by: bag)
+
         // Bind to the tableview
         viewModel.movies.catchErrorJustReturn([])
-            .bind(to: tableView.rx.items(cellIdentifier: MovieCell.reuseIdentifier, cellType: MovieCell.self)) { [weak self] idx, movie, cell in
-                cell.movie = movie
-//                if self?.tableView.indexPathForSelectedRow == nil {
-//                    self?.tableView.selectRow(at: IndexPath(row: idx, section: 0), animated: true, scrollPosition: .none)
-//                    self?.viewModel.selectMovie(movie)
-//                }
+            .bind(to: tableView.rx.items(cellIdentifier: MovieCell.reuseIdentifier, cellType: MovieCell.self)) { _, movie, cell in
+                if let vm = cell.viewModel {
+                    vm.movie.onNext(movie)
+                } else {
+                    cell.viewModel = MovieCellViewModel(movie: movie)
+                }
             }.disposed(by: bag)
+
         // Display error
         viewModel.errors.subscribe(onNext: { [weak self] error in
+            self?.refreshControl?.endRefreshing()
+            self?.stopAnimating()
             self?.alert(.Movies24i, message: error.localizedDescription)
         }).disposed(by: bag)
+
+        // Load movies on start
+        startAnimating()
+        viewModel.fetch()
     }
 
 }

@@ -28,10 +28,18 @@ class AppCoordinator: Coordinator {
     }
 
     func start() {
-        showMovies()
+        showMoviesAndDetail()
     }
 
     func showMovies() {
+        let nav = UINavigationController()
+        let c = MovieCatalogueCoordinator(nav)
+        c.start()
+        children.append(c)
+        root = nav
+    }
+
+    func showMoviesAndDetail() {
         let split = MainSplitViewController()
         split.viewControllers = [UINavigationController(), UINavigationController()]
         root = split

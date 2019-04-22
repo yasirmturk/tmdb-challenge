@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import AlamofireImage
 
+/// ViewController for the movie details
 class MovieDetailViewController: RxViewController, Storyboarded {
 
     // MARK: - Outlets
@@ -25,6 +26,8 @@ class MovieDetailViewController: RxViewController, Storyboarded {
     @IBOutlet weak var overviewTextView: UITextView!
 
     // MARK: - Properties
+
+    /// ViewModel for the movie details
     var viewModel: MovieDetailViewModel!
 
     // MARK: - Private fields
@@ -61,8 +64,10 @@ class MovieDetailViewController: RxViewController, Storyboarded {
     override func prepareBinding() {
         super.prepareBinding()
 
-        trailerButton.rx.tap.subscribe(onNext: { [weak self] in
-            self?.viewModel.watchTrailer()
+        // Bind watch trailer button tap
+        trailerButton.rx.tap.subscribe(onNext: { [unowned self] in
+            self.startAnimating()
+            self.viewModel.fetchVideos()
         }).disposed(by: bag)
     }
 
@@ -75,14 +80,26 @@ class MovieDetailViewController: RxViewController, Storyboarded {
                 self?.configureView(movie)
             }).disposed(by: bag)
 
+        // Bind videos
+        viewModel.videos.subscribe(onNext: { [weak self] videos in
+            self?.stopAnimating()
+            // Present list of videos to user
+            // or
+            // Auto pick first one
+            guard let v = videos.first(where: { $0.site == .youtube }) else { return }
+            // Proceed to player
+            self?.viewModel.watchTrailer(v)
+        }).disposed(by: bag)
+
         // Display error
         viewModel.errors.subscribe(onNext: { [weak self] error in
+            self?.stopAnimating()
             self?.alert(.Movies24i, message: error.localizedDescription)
         }).disposed(by: bag)
     }
 
+    /// Update the user interface for the detail item.
     func configureView(_ movie: Movie) {
-        // Update the user interface for the detail item.
         titleLabel.text = movie.title
         if let poster = movie.posterURL() {
             imageView.af_setImage(withURL: poster, placeholderImage: UIImage(named: "mozima"))
