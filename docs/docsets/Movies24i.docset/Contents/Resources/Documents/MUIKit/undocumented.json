@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseCollectionCell.swift",
+      "line": 14,
+      "symbol": "BaseCollectionCell.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseCollectionCell.swift",
+      "line": 19,
+      "symbol": "BaseCollectionCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseControl.swift",
+      "line": 14,
+      "symbol": "BaseControl.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseControl.swift",
+      "line": 19,
+      "symbol": "BaseControl.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseNavigationController.swift",
+      "line": 11,
+      "symbol": "BaseNavigationController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableCell.swift",
+      "line": 12,
+      "symbol": "BaseTableCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableCell.swift",
+      "line": 14,
+      "symbol": "BaseTableCell.init(style:reuseIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableCell.swift",
+      "line": 18,
+      "symbol": "BaseTableCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableCell.swift",
+      "line": 22,
+      "symbol": "BaseTableCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableCell.swift",
+      "line": 28,
+      "symbol": "BaseTableCell.prepareView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableViewController.swift",
+      "line": 11,
+      "symbol": "BaseTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseTableViewController.swift",
+      "line": 13,
+      "symbol": "BaseTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseView.swift",
+      "line": 14,
+      "symbol": "BaseView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseView.swift",
+      "line": 19,
+      "symbol": "BaseView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseViewController.swift",
+      "line": 14,
+      "symbol": "BaseViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseViewController.swift",
+      "line": 18,
+      "symbol": "BaseViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/BaseClasses/BaseViewController.swift",
+      "line": 22,
+      "symbol": "BaseViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/Extensions/String.swift",
+      "line": 27,
+      "symbol": "Localize.System.ok",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/Extensions/String.swift",
+      "line": 28,
+      "symbol": "Localize.System.cancel",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/Extensions/String.swift",
+      "line": 29,
+      "symbol": "Localize.System.done",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/Extensions/String.swift",
+      "line": 30,
+      "symbol": "Localize.System.search",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MUIKit/Extensions/ViewControllers.swift",
+      "line": 22,
+      "symbol": "UIViewController.dismissKeyboard()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/punchee/Documents/personal/career/24i/src/Movies24i"
+}

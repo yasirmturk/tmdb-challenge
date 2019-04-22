@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/BaseClasses/BaseViewModel.swift",
+      "line": 14,
+      "symbol": "BaseViewModel.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/BaseClasses/Protocols/ModelStore.swift",
+      "line": 13,
+      "symbol": "ModelStore.SVC",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/BaseClasses/Protocols/ModelStore.swift",
+      "line": 14,
+      "symbol": "ModelStore.network",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/Extensions/Coding.swift",
+      "line": 47,
+      "symbol": "Dictionary.queryString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/Localize.swift",
+      "line": 16,
+      "symbol": "Localize.General.M24i",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/Services/NetworkProvider.swift",
+      "line": 25,
+      "symbol": "NetworkProvider.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/Services/NetworkProvider.swift",
+      "line": 30,
+      "symbol": "NetworkProvider.init(session:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/MCoreKit/Services/StubProvider.swift",
+      "line": 16,
+      "symbol": "StubProvider.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/punchee/Documents/personal/career/24i/src/Movies24i"
+}

@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/Movies24i/Global.swift",
+      "line": 55,
+      "symbol": "MConfig.defaultEnvironment",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/Movies24i/Services/Alamofire/AlamofireProvider.swift",
+      "line": 12,
+      "symbol": "AlamofireProvider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/Movies24i/Services/Alamofire/AlamofireProvider.swift",
+      "line": 22,
+      "symbol": "AlamofireProvider.manager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/Movies24i/Services/Alamofire/AlamofireProvider.swift",
+      "line": 24,
+      "symbol": "AlamofireProvider.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/punchee/Documents/personal/career/24i/src/Movies24i/Movies24i/Services/Alamofire/AlamofireProvider.swift",
+      "line": 30,
+      "symbol": "AlamofireProvider.init(manager:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/punchee/Documents/personal/career/24i/src/Movies24i"
+}

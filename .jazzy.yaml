@@ -1,0 +1,29 @@
+---
+author: Yasir M Türk
+author_url: https://www.yasirmturk.com/
+github_url: https://github.com/yasirmturk/tmdb-challenge
+module: Movies24i
+sdk: iphonesimulator
+output: "../docs/"
+#output: "../docs/MCoreKit"
+#output: "../docs/MUIKit"
+xcodebuild_arguments:
+  - "-workspace"
+  - Movies24i.xcworkspace
+  - "-scheme"
+  - Movies24i
+  #- "-scheme"
+  #- MCoreKit
+  #- "-scheme"
+  #- MUIKit
+custom_categories:
+  - name: Documentation
+    children:
+      #- About IMDb
+      #- Credits
+      #- Changelog
+      - License
+  - name: "Core Modules "
+    children:
+      - MCoreKit
+      - MUIKit

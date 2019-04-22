@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">MCoreKit Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/yasirmturk/tmdb-challenge"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">MCoreKit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/BaseViewModel.html">BaseViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NetworkProvider.html">NetworkProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StubProvider.html">StubProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Localize.html">Localize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Localize/General.html">– General</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NetworkEncoding.html">NetworkEncoding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URLRequest.html">URLRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/HTTPGetEndPoint.html">HTTPGetEndPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HTTPPostEndPoint.html">HTTPPostEndPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:8MCoreKit5ModelP">Model</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ModelStore.html">ModelStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NetworkEndpoint.html">NetworkEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NetworkService.html">NetworkService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ServerInfo.html">ServerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StubbedEndpoint.html">StubbedEndpoint</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:8MCoreKit7Headersa">Headers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:8MCoreKit4JSONa">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:8MCoreKit6Paramsa">Params</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit5ModelP"></a>
+                    <a name="//apple_ref/swift/Protocol/Model" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit5ModelP">Model</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol model should atleast be Decodable</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Model</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit10ModelStoreP"></a>
+                    <a name="//apple_ref/swift/Protocol/ModelStore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit10ModelStoreP">ModelStore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for a ModelStore that should have a network service</p>
+
+                        <a href="Protocols/ModelStore.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ModelStore</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Network%20Endpoints%20information%20and%20configuration"></a>
+                <a name="//apple_ref/swift/Section/Network Endpoints information and configuration" class="dashAnchor"></a>
+                <a href="#/Network%20Endpoints%20information%20and%20configuration">
+                  <h3 class="section-name">Network Endpoints information and configuration</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit15NetworkEndpointP"></a>
+                    <a name="//apple_ref/swift/Protocol/NetworkEndpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit15NetworkEndpointP">NetworkEndpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This defines the basic information of an endpoint</p>
+
+                        <a href="Protocols/NetworkEndpoint.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NetworkEndpoint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit15HTTPGetEndPointP"></a>
+                    <a name="//apple_ref/swift/Protocol/HTTPGetEndPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit15HTTPGetEndPointP">HTTPGetEndPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This defines an endpoint of type GET</p>
+
+                        <a href="Protocols/HTTPGetEndPoint.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HTTPGetEndPoint</span> <span class="p">:</span> <span class="kt"><a href="Protocols/NetworkEndpoint.html">NetworkEndpoint</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit16HTTPPostEndPointP"></a>
+                    <a name="//apple_ref/swift/Protocol/HTTPPostEndPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit16HTTPPostEndPointP">HTTPPostEndPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This defines an endpoint of HTTP/Form Post</p>
+
+                        <a href="Protocols/HTTPPostEndPoint.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HTTPPostEndPoint</span> <span class="p">:</span> <span class="kt"><a href="Protocols/NetworkEndpoint.html">NetworkEndpoint</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit14NetworkServiceP"></a>
+                    <a name="//apple_ref/swift/Protocol/NetworkService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit14NetworkServiceP">NetworkService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To provide the functionality which actually handles the network calls</p>
+
+                        <a href="Protocols/NetworkService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NetworkService</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit10ServerInfoP"></a>
+                    <a name="//apple_ref/swift/Protocol/ServerInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit10ServerInfoP">ServerInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Network server information and configuration</p>
+
+                        <a href="Protocols/ServerInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServerInfo</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MCoreKit15StubbedEndpointP"></a>
+                    <a name="//apple_ref/swift/Protocol/StubbedEndpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MCoreKit15StubbedEndpointP">StubbedEndpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provide Stubbed responses for any Endpoint</p>
+
+                        <a href="Protocols/StubbedEndpoint.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StubbedEndpoint</span> <span class="p">:</span> <span class="kt"><a href="Protocols/NetworkEndpoint.html">NetworkEndpoint</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://www.yasirmturk.com/" target="_blank" rel="external">Yasir M Türk</a>. All rights reserved. (Last updated: 2019-04-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
