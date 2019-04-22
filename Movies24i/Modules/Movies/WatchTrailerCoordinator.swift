@@ -36,7 +36,7 @@ class WatchTrailerCoordinator: Coordinator {
     }
 
     func loadYouTubeVideo(_ key: String, in playerVC: AVPlayerViewController) {
-        XCDYouTubeClient.default().getVideoWithIdentifier(key) { [weak self, weak playerVC] youTubeVideo, error in
+        XCDYouTubeClient.default().getVideoWithIdentifier(key) { [weak self, weak playerVC] youTubeVideo, _ in
             if let v = youTubeVideo,
                 let url = v.streamURLs[XCDYouTubeVideoQualityHTTPLiveStreaming]
                     ?? v.streamURLs[XCDYouTubeVideoQuality.HD720.key]

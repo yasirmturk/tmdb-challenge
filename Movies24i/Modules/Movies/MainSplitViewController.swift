@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Split ViewController used on iPad only but could be used on any device
 class MainSplitViewController: UISplitViewController, Storyboarded {
 
     // MARK: - Properties
@@ -17,7 +18,7 @@ class MainSplitViewController: UISplitViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        preferredDisplayMode = .allVisible
+        // preferredDisplayMode = .allVisible
         delegate = self
 
         catalogue = MovieCatalogueCoordinator(viewControllers[0])
@@ -25,20 +26,14 @@ class MainSplitViewController: UISplitViewController, Storyboarded {
         catalogue.prepareMovieDetail(viewControllers[1])
     }
 
-//    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-//        for child in children {
-//            setOverrideTraitCollection(UITraitCollection(horizontalSizeClass: .compact), forChild: child)
-//        }
-//    }
-
 }
 
 // MARK: - Split view
 
 extension MainSplitViewController: UISplitViewControllerDelegate {
 
+    // Do not need this for ipad but kept for reference
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-//        return true
         guard let secondary = secondaryViewController as? UINavigationController else { return false }
         guard let top = secondary.topViewController as? MovieDetailViewController else { return false }
         guard top.viewModel.selectedMovie != nil else {

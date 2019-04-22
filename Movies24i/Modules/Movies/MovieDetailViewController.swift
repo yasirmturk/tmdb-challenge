@@ -110,7 +110,7 @@ class MovieDetailViewController: RxViewController, Storyboarded {
     /// Update the user interface for the detail item.
     func configureView(_ movie: Movie) {
         titleLabel.text = movie.title
-        if let poster = movie.posterURL() {
+        if let poster = movie.posterURL(for: .w780) {
             imageView.af_setImage(withURL: poster, placeholderImage: UIImage(named: "mozima"))
         }
         genreLabel.text = movie.genres.compactMap({ $0.name }).joined(separator: ",")

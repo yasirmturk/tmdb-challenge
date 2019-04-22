@@ -9,7 +9,13 @@
 import MCoreKit
 
 enum PosterSize: String {
+    case w92
+    case w154
+    case w185
     case w342
+    case w500
+    case w780
+    case original
 }
 
 /// Defines the type of Movie returned from the API
@@ -29,7 +35,7 @@ extension Movie {
     // Computed attributes
 
     // Methods
-    func posterURL(for size: PosterSize = .w342) -> URL? {
+    func posterURL(for size: PosterSize = .w500) -> URL? {
         return URL(string: size.rawValue + poster,
                    relativeTo: MConfig.Servers.media.url)
     }
