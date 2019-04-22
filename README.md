@@ -47,3 +47,19 @@ This is also a group of classes and extensions but specific to the UI functional
 Written test case for Decoding, Stub API, Live API and Models only
 
 ## Screenshots
+
+### iPhone
+
+![iPhone Catalogue](/docs/screens/iPhone-catalogue.png)
+![iPhone Catalogue Filter](/docs/screens/iPhone-catalogue-filter.png)
+![iPhone Catalogue Landscape](/docs/screens/iPhone-catalogue-landscape.png)
+![iPhone Detail](/docs/screens/iPhone-detail.png)
+![iPhone Details Landscape](/docs/screens/iPhone-detail-landscape.png)
+![iPhone Trailer](/docs/screens/iPhone-trailer.png)
+
+### iPad
+
+![iPad](/docs/screens/iPad.png)
+![iPad Catalogue Overlay](/docs/screens/iPad-catalogue-overlay.png)
+![iPad Filter](/docs/screens/iPad-filter.png)
+![iPad Detail](/docs/screens/iPad-detail.png)
