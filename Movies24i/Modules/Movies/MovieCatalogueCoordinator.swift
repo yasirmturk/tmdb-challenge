@@ -33,6 +33,7 @@ class MovieCatalogueCoordinator: Coordinator {
 
     func prepareMovieDetail(_ root: UIViewController) {
         let c = MovieDetailCoordinator(root)
+        c.parent = self
         c.start()
         children.append(c)
     }
@@ -67,6 +68,9 @@ extension MovieCatalogueCoordinator: MovieCatalogueViewModelDelegate {
     }
 
     func didSelect(_ movie: Movie) {
+        if UIDevice.current.userInterfaceIdiom != .pad {
+            prepareMovieDetail(root)
+        }
         reloadMovieDetail(movie)
     }
 }

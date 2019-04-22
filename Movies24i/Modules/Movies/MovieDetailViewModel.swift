@@ -12,6 +12,7 @@ import RxSwift
 /// Events generated from the Movie details ViewModel
 protocol MovieDetailViewModelDelegate: AnyObject {
     func showTrailer(for video: Video)
+    func viewWillDismiss()
 }
 
 /// ViewModel class for movie details
@@ -62,5 +63,9 @@ class MovieDetailViewModel: RxViewModel {
 
     func watchTrailer(_ video: Video) {
         self.delegate?.showTrailer(for: video)
+    }
+
+    func cleanup() {
+        self.delegate?.viewWillDismiss()
     }
 }

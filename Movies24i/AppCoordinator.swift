@@ -28,7 +28,11 @@ class AppCoordinator: Coordinator {
     }
 
     func start() {
-        showMoviesAndDetail()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            showMoviesAndDetail()
+        } else {
+            showMovies()
+        }
     }
 
     func showMovies() {

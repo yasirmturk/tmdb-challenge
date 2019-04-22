@@ -14,6 +14,8 @@ class MovieDetailCoordinator: Coordinator {
     var children = [Coordinator]()
     var root: UIViewController!
 
+    weak var parent: Coordinator?
+
     weak var viewModel: MovieDetailViewModel?
 
     init(_ controller: UIViewController) {
@@ -29,7 +31,11 @@ class MovieDetailCoordinator: Coordinator {
         vc.viewModel = vm
         viewModel = vm
 
-        root.viewControllers = [vc]
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            root.viewControllers = [vc]
+        } else {
+            root.pushViewController(vc, animated: true)
+        }
     }
 
     // MARK: - Detail operations
@@ -58,5 +64,9 @@ extension MovieDetailCoordinator: MovieDetailViewModelDelegate {
 
     func showTrailer(for video: Video) {
         playVideo(video)
+    }
+
+    func viewWillDismiss() {
+        parent?.childDidFinish(self)
     }
 }

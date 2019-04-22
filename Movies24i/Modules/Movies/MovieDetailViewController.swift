@@ -41,6 +41,15 @@ class MovieDetailViewController: RxViewController, Storyboarded {
         navigationItem.leftItemsSupplementBackButton = true
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if let nav = navigationController, !nav.viewControllers.contains(self) {
+            // print("Popping out, time for cleanup")
+            viewModel.cleanup()
+        }
+    }
+
     override func prepareView() {
         super.prepareView()
 
