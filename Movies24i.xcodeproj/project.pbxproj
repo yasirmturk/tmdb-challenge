@@ -384,7 +384,6 @@
 				C1E329962268D69800C1682F /* Services */,
 				C195D5C72267741C0098FD7E /* Extensions */,
 				C195D5D3226777C20098FD7E /* Protocols */,
-				C15455E922673B67007661C1 /* Main.storyboard */,
 				C15455EC22673B68007661C1 /* Assets.xcassets */,
 				C15455EE22673B68007661C1 /* LaunchScreen.storyboard */,
 				C15455F122673B68007661C1 /* Info.plist */,
@@ -623,6 +622,7 @@
 		C1E329912268CF3B00C1682F /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				C15455E922673B67007661C1 /* Main.storyboard */,
 				C1E3298D2268B9AE00C1682F /* MainSplitViewController.swift */,
 				C10D971C226CE22300F0C5DA /* MovieModel.swift */,
 				C18947B9226B078400F6A7FD /* MovieCatalogueCoordinator.swift */,
