@@ -22,8 +22,9 @@ class DataStoreProvider {
     }
 
     /// fetch from database
-    func fetchPopular() -> Results<RLMMovie> {
-        return try! Realm().objects(RLMMovie.self)
+    func fetchPopular(filter title: String = "") -> Results<RLMMovie> {
+        let allResults = try! Realm().objects(RLMMovie.self)
+        return title.isEmpty ? allResults : allResults.filter("title CONTAINS[cd] %@", title)
     }
 
     /// Dump the data asyncronously

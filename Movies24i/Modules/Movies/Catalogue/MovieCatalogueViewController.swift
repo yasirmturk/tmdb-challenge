@@ -18,6 +18,10 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
     /// ViewModel for the list of popular movies
     var viewModel: MovieCatalogueViewModel!
 
+    // MARK: - Private fields
+
+    private var searchController: UISearchController!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,6 +42,17 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
 
         tableView.refreshControl = refreshControl
         tableView.rowHeight = 100.0
+
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.dimsBackgroundDuringPresentation = false
+
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            // Fallback on earlier versions
+            tableView.tableHeaderView = searchController.searchBar
+        }
     }
 
     override func prepareBinding() {
@@ -48,6 +63,11 @@ class MovieCatalogueViewController: RxTableController, Storyboarded {
             .subscribe(onNext: { [unowned self] in
                 self.viewModel.fetch()
             }).disposed(by: bag)
+
+        // Search Controller
+        searchController.searchBar.rx.text
+            .debounce(0.5, scheduler: MainScheduler.instance)
+            .bind(to: viewModel.filter).disposed(by: bag)
 
         // Bind row selection
         tableView.rx.modelSelected(Movie.self).subscribe(onNext: { [unowned self] model in

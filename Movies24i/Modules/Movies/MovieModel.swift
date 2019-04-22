@@ -38,12 +38,16 @@ struct MovieModel: ModelStore {
             })
         } else {
             // Provide from offline source
-            let results = store.fetchPopular()
-            results.isEmpty
-                ? onError(TMDbAPIError.emptyData)
-                : onSuccess(Array(results.map({ $0.model })))
+            let results = self.fetchPopularFromStore()
+            results.isEmpty ? onError(TMDbAPIError.emptyData) : onSuccess(results)
         }
 
+    }
+
+    /// Provides movie list only from the offline store
+    func fetchPopularFromStore(filter: String? = nil) -> [Movie] {
+        let results = store.fetchPopular(filter: filter.orEmpty)
+        return Array(results.map({ $0.model }))
     }
 
     /// Provides movie details from an online source

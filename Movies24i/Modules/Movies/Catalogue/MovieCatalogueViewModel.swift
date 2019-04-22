@@ -26,7 +26,7 @@ class MovieCatalogueViewModel: RxViewModel {
 
     let movies = PublishSubject<[Movie]>()
     let errors = PublishSubject<Error>()
-//    let events = PublishSubject<Event>()
+    let filter = PublishSubject<String?>()
 
     weak var delegate: MovieCatalogueViewModelDelegate?
 
@@ -39,12 +39,10 @@ class MovieCatalogueViewModel: RxViewModel {
     override func prepare() {
         super.prepare()
 
-//        events.subscribe(onNext: { [unowned self] e in
-//            switch e {
-//            case .reload: self.fetch()
-//            case .selectMovie(let m): self.delegate?.didSelect(m)
-//            }
-//        }).disposed(by: bag)
+        filter.subscribe(onNext: { [unowned self] str in
+            let movies = self.model.fetchPopularFromStore(filter: str)
+            self.movies.onNext(movies)
+        }).disposed(by: bag)
     }
 
     func fetch() {
