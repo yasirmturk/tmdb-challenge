@@ -613,20 +613,20 @@
 				C195D5C32267738E0098FD7E /* Strings.swift */,
 				C1E329A22268DE9300C1682F /* Coding.swift */,
 				C1F22079226DD8270045AF8A /* XCDYouTubeKit.swift */,
-				C195D5D0226774E70098FD7E /* Rx */,
+				C195D5D0226774E70098FD7E /* RxBaseClasses */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		C195D5D0226774E70098FD7E /* Rx */ = {
+		C195D5D0226774E70098FD7E /* RxBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
 				C195D5C8226774370098FD7E /* RxViewModel.swift */,
-				C195D5CA2267744E0098FD7E /* RxViewController.swift */,
 				C195D5CC226774670098FD7E /* RxTableCell.swift */,
+				C195D5CA2267744E0098FD7E /* RxViewController.swift */,
 				C195D5CE2267747E0098FD7E /* RxNavigationController.swift */,
 			);
-			path = Rx;
+			path = RxBaseClasses;
 			sourceTree = "<group>";
 		};
 		C195D5D3226777C20098FD7E /* Protocols */ = {

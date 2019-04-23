@@ -10,11 +10,6 @@ import MUIKit
 import RxSwift
 import NVActivityIndicatorView
 
-class RxView: BaseView {
-    ///
-    let bag = DisposeBag()
-}
-
 /// Reactive Rx base class for UIViewController
 class RxViewController: BaseViewController, NVActivityIndicatorViewable {
     ///
