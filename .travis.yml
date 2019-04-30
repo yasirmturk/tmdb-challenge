@@ -1,0 +1,5 @@
+language:
+  - swift
+osx_image: xcode10.2
+script:
+  - xcodebuild -scheme Movies24i -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' build test
