@@ -1,5 +1,7 @@
 # tmdb-challenge iOS App
 
+[![codebeat badge](https://codebeat.co/badges/e1616e1b-3745-4889-a72a-7f6dfc1f5897)](https://codebeat.co/projects/github-com-yasirmturk-tmdb-challenge-master)
+
 ## Tools & Technologies
 
 The project is developed in Xcode 10.2.1, iOS 12 SDK, Swift 5 and minimum deployment target as iOS 10.
